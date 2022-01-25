@@ -3,3 +3,16 @@ body {
   background-repeat: no-repeat;
   height: 100%;
 }
+
+.topnav {
+  color: aqua;
+}
+
+.topnav #myLinks {
+  display: none;
+  color: aqua;
+}
+
+#myLinks a {
+  color: aqua;
+}
