@@ -1,3 +1,5 @@
+
+
 .topnav {
   color: aqua;
 }
@@ -63,3 +65,48 @@ section .loader .dot {
     background-repeat: no-repeat;
   }
 } */
+
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  padding: 10px 20px 20px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(162, 162, 255);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:rgb(22, 26, 255);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+#hamburger{
+  color: rgb(136, 136, 255);
+  cursor: default;
+  font-size: 40px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
