@@ -1,0 +1,102 @@
+body {
+  background-image: url("backg.jpg");
+  font-family: consolas;
+}
+
+.topnav {
+  color: aqua;
+}
+
+.topnav #myLinks {
+  display: none;
+  color: aqua;
+}
+
+#myLinks a {
+  color: gray;
+}
+
+.input {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 45px;
+}
+.button {
+  background-color: #4caf50;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 45px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+h1 {
+  color: rgb(39, 45, 49);
+  border-left: 2px solid #4caf50;
+  border-right: 2px solid #4caf50;
+  padding: 10px;
+  margin: 20px;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background-color: rgb(199, 199, 199);
+  border-radius: 25px;
+  width: 300px;
+  border: 1px solid rgb(138, 138, 138);
+  padding: 10px;
+  height: max-content;
+  margin: auto;
+}
+
+.inputbar {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(165, 246, 172);
+  border-radius: 25px;
+  background: rgb(237, 255, 238);
+  transition: background 0.25s, box-shadow 0.25s;
+}
+.inputbar:focus {
+  background: white;
+}
+.footer {
+  border-top: 1px solid rgb(199, 199, 199);
+  height: 200px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(189, 176, 176);
+  color: white;
+}
+.footerleft {
+  float: left;
+  width: 45%;
+  border-right: #4caf50;
+}
+
+.footercenter {
+  float: left;
+  width: 36%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
