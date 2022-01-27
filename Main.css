@@ -1,7 +1,11 @@
+
 body {
   background-image: url('backg.jpg');
   font-family: consolas ;
   }
+
+
+
 
 .topnav {
   color: aqua;
@@ -13,9 +17,9 @@ body {
 }
 
 #myLinks a {
-
   color: gray;
 }
+
 .input{
 
 
@@ -111,3 +115,103 @@ background: white;
   width: 36%;
   
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #435d6c;
+}
+
+section .loader {
+  position: relative;
+  display: flex;
+}
+
+section .loader .dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #72787e;
+  box-shadow: 0 0 10px grey, 0 0 20px rgb(231, 231, 231),
+    0 0 40px rgb(231, 231, 231), 0 0 60px rgb(231, 231, 231),
+    0 0 80px rgb(231, 231, 231), 0 0 100px rgb(231, 231, 231);
+  margin: 20px 10px;
+  border-radius: 50%;
+  animation: animateDot 2s linear infinite;
+  /*går från dot 1 till dot 9*/
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animateDot {
+  10% {
+    transform: scale(0.1);
+  }
+}
+
+/* @media (max-width: 576px) {
+  body {
+    height: 100%;
+    width: 1000px;
+    background-color: hsla(200, 40%, 30%, 0.4);
+    background-image: url("jr-korpa-jD1huE0iPk0-unsplash.jpg");
+    background-repeat: no-repeat;
+  }
+} */
+
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  padding: 10px 20px 20px 40px;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(162, 162, 255);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:rgb(22, 26, 255);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+#hamburger{
+  color: rgb(136, 136, 255);
+  cursor: default;
+  font-size: 40px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
