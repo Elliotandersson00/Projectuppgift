@@ -4,6 +4,9 @@ body {
   font-family: consolas ;
   padding: 0;
   margin: 0;
+  /* background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
+  background-size: cover;
+  background-repeat: no-repeat; */
   }
 .topnav {
   color: aqua;
@@ -120,32 +123,41 @@ background: white;
 }
 
 section {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #97d0f1;
   animation: changeColor 5s linear infinite;
 }
 
-@keyframes changeColor {
+/* @keyframes changeColor {
   0% {
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(360deg);
+    filtezr: hue-rotate(360deg);
   }
-}
+} */
 
 section .loader {
   position: relative;
   display: flex;
   align-items: flex-end;
+  
 }
-
+@media screen and (max-width: 576px) {
+  section .loader {
+    margin-top: -50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  section .loader {
+    margin-top: -400px;
+  }
+}
 section .loader .dot {
   position: relative;
   display: block;
@@ -316,7 +328,7 @@ nav.blend ul li a:after {
   height: 100%;
   top: 0;
   bottom: 0;
-  background: black;
+  background: blue;
   transition: all .5s;
   margin: auto;
   content: '.';
@@ -336,7 +348,35 @@ nav.blend ul li a:hover:before {
   width: 100%;
 }
 @media screen and (max-width : 576px) {
-  .stroke{
+  .blend{
     display: none;
+  }
+}
+#SlideshowBG{
+width: 100%;
+height: 100vh;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+backface-visibility: hidden;
+animation: SlideshowBG 30s linear infinite 0s;
+animation-timing-function:ease-in-out;
+background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+@keyframes SlideshowBG{
+  0%{
+    background-image: url("https://wallpaperaccess.com/full/277110.jpg");
+  }
+  25%{
+    background-image: url("https://wallpapercave.com/wp/X27PjjN.jpg");
+  }
+  50%{
+    background-image: url("https://cdn.wallpapersafari.com/2/1/cJ2NUE.jpg");
+  }
+  75%{
+    background-image: url("https://wallpaper.dog/large/10822068.jpg");
+  }
+  100%{
+    background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
   }
 }
