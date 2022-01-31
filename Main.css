@@ -1,30 +1,163 @@
-section {
-  position: relative;
+
+
+body {
+  font-family: consolas ;
+  padding: 0;
+  margin: 0;
+  /* background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  }
+.topnav {
+  color: aqua;
+}
+
+.topnav #myLinks {
+  display: none;
+  color: aqua;
+}
+
+#myLinks a {
+  color: gray;
+}
+
+.input{
+  color: rgb(255, 255, 255);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 45px;
+
+}
+.button{
+  background-color: #4CAF50;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 45px;
+  border-radius: 25px;
+}
+
+.button:hover
+{
+  background-color: white;
+  color:  #4CAF50;
+  border: 1px solid #4CAF50;
+  
+}
+h1{
+  
+  color: rgb(39, 45, 49);
+  border-left: 2px solid #4CAF50 ;
+  border-right: 2px solid #4CAF50 ;
+  padding: 10px;
+  margin: 20px;
+}
+.h1{
+  display: flex;
+  justify-content: center;
+  
+}
+.box
+{
+  background-color: rgb(199, 199, 199);
+  border-radius: 25px;
+  width: 300px;
+  border: 1px solid rgb(138, 138, 138);
+  padding: 10px;
+  height: max-content ;
+  margin: auto;
+}
+
+.inputbar{
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(165, 246, 172);
+  border-radius: 25px;
+  background: rgb(237, 255, 238);
+  transition: background 0.25s, box-shadow 0.25s;
+}
+.inputbar:focus{
+background: white;
+
+}
+.footer {
+  border-top: 1px solid rgb(199, 199, 199);
+  height: 200px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100vh;
+  background-color: rgb(189, 176, 176);
+  color: white;
+  
+ 
+
+}
+.footerleft
+{
+  float: left;
+  width: 45%;
+ border-right: #4CAF50  ;
+ 
+}
+.footercenter
+{
+  float: left;
+  width: 36%;
+  
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #97d0f1;
   animation: changeColor 5s linear infinite;
 }
 
-@keyframes changeColor {
+/* @keyframes changeColor {
   0% {
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(360deg);
+    filtezr: hue-rotate(360deg);
   }
-}
+} */
 
 section .loader {
   position: relative;
   display: flex;
   align-items: flex-end;
+  
 }
-
+@media screen and (max-width: 576px) {
+  section .loader {
+    margin-top: -50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  section .loader {
+    margin-top: -400px;
+  }
+}
 section .loader .dot {
   position: relative;
   display: block;
@@ -124,6 +257,8 @@ section .loader2 .dot {
 #hamburger {
   color: rgb(136, 136, 255);
   cursor: default;
+  margin-bottom: 500px;
+  margin-right: 400px;
   font-size: 40px;
 }
 @media screen and (max-height: 450px) {
@@ -132,5 +267,117 @@ section .loader2 .dot {
   }
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width : 576px) {
+  .sidenav{
+    display: none;
+  }
+  #hamburger{
+    display: none;
+  }
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0;
+  
+}
+
+/* By Dominik Biedebach @domobch */
+nav ul {
+  list-style: none;
+  text-align: center;
+  position: sticky;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+nav.blend ul li a {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.blend ul li a:hover {
+  color: #fff;
+}
+nav.blend ul li a:before,
+nav.blend ul li a:after {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: blue;
+  transition: all .5s;
+  margin: auto;
+  content: '.';
+  color: transparent;
+  z-index: -1;
+  opacity: 0.75;
+}
+nav.blend ul li a:before {
+  left: 0;
+}
+nav.blend ul li a:after {
+  right: 0;
+}
+
+nav.blend ul li a:hover:after,
+nav.blend ul li a:hover:before {
+  width: 100%;
+}
+@media screen and (max-width : 576px) {
+  .blend{
+    display: none;
+  }
+}
+#SlideshowBG{
+width: 100%;
+height: 100vh;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+backface-visibility: hidden;
+animation: SlideshowBG 30s linear infinite 0s;
+animation-timing-function:ease-in-out;
+background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+@keyframes SlideshowBG{
+  0%{
+    background-image: url("https://wallpaperaccess.com/full/277110.jpg");
+  }
+  25%{
+    background-image: url("https://wallpapercave.com/wp/X27PjjN.jpg");
+  }
+  50%{
+    background-image: url("https://cdn.wallpapersafari.com/2/1/cJ2NUE.jpg");
+  }
+  75%{
+    background-image: url("https://wallpaper.dog/large/10822068.jpg");
+  }
+  100%{
+    background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
   }
 }
