@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="jsMain.js"></script>
-    <link rel="stylesheet" href="./form-to-json.css" type="text/css">
-    <title>Document</title>
+    <link rel="stylesheet" href="kontakt.css">
+   
+    <title>Kontakt</title>
 </head>
 
    
@@ -22,51 +20,59 @@
     <form id="myForm">
         
         <label for="fname"></label><br>
-        <input type="text" class ="inputbar"id="firstname" name="firstname"placeholder="Förnamn"><br>
+        <input type="text" class ="inputbar"id="firstname" name="firstname"placeholder="Förnamn" autocomplete="off" required ><br>
         <label for="lname"></label><br>
-        <input type="text" class ="inputbar" id="lastname" name="lastname"placeholder="Efternamn"><br>
+        <input type="text" class ="inputbar" id="lastname" name="lastname"placeholder="Efternamn"autocomplete="off" required><br>
         <label for="phonenumber"></label><br>
-        <input type="number" class ="inputbar" id="phone" name="phone"placeholder="Telefon"><br>
+        <input type="number" class ="inputbar" id="phone" name="phone"placeholder="Telefon" autocomplete="off" required><br>
         <label for="mail"></label><br>
-        <input type="text" class ="inputbar" id="mail" name="mail"placeholder="Mail"><br><br><br>
-    <div></div>
-
-       
-
-        <p><input type="checkbox" name="section" value="phone">Ta del av våra nyhetsbrev.</p>
+        <input type="text" class ="inputbar" id="mail" name="mail"placeholder="Mail" autocomplete="off" required><br>
+    
+        <p><input type="checkbox" class name="section" value="phone">Ta del av våra nyhetsbrev.</p>
         <p><input type="checkbox" name="section" value="mail">Godkänner att it-konsult.ab sparar dina uppgifter.</p>
        
+        <label for="freetext">Annan Information:</label><br>
         
+        <textarea id="freetext" name="freetext" rows="6" cols="20">Skriv något här.
+        </textarea>
         
-        <button type="submit" class="button" id="btn">Sänd</button>
-   
+        <button type="submit" class="button" id="btn">Sänd</button> 
       </form>
-    
-    </div>
-    </div>
-    <div class="footer" >
-      
-      
-      <div class="footerleft"><h4>Kontakt</h4>
-        <p>iths@iths <br>
-          070123456789<br>
-          Årstaängsvägen 9, 117 43 Stockholm </p>
-      </div>
-      <div class="footercenter"><h4>Om oss</h4>
-        <p>Press <br>
-          Om Företaget<br>
-          Hållbarhet </p></div>
-      <div class="footerright"> <h4>Köpinformation</h4>
+        
+        <div class="footer-container">
+          <div class="footer">
+         
+            <div class="footer-heading footer-1"> 
+             
+              <h2>Kontakt</h2>
+              <a href="https://www.google.se/maps/place/IT-H%C3%B6gskolan+Stockholm/@59.3108866,18.027664,17z/data=!3m1!4b1!4m5!3m4!1s0x465f77fdc8c7b655:0x1bd3b6dfec9b163c!8m2!3d59.3109145!4d18.0297711"> Hitta hit</a>
+              <a href="tel:+46855768353">Ring oss</a>
+              <a href="mailto:iths@iths.se">Maila</a>
+              
+            </div>
+            <div class="footer-heading footer-2"> 
+              <h2>Köpinformation</h2>
+              <a href=""> Ånger och reklamation</a>
+              <a href="">Integritet</a>
+              <a href="mailto:iths@iths.se">Support</a>
+            </div>
+            <div class="footer-heading footer-3"> 
+              <h2>Om oss</h2>
+            <a href=""> Press</a>
+            <a href="">Om företaget</a>
+            <a href="">Hållbarhet</a>
+          </div>
        
-      
-        Priser, villkor och blanketter <br>
-        Om du har ångrat dig <br>
-        Integritet <br>
-        Support <br>
+        </div>
       </div>
-    </div>
- 
+     
+        </div>
+        
+      </div>
 
-  
+
+
 </body>
 </html>
+
+
