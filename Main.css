@@ -57,6 +57,7 @@ h1{
   border-right: 2px solid #4CAF50 ;
   padding: 10px;
   margin: 20px;
+  color: red;
 }
 .h1{
   display: flex;
@@ -299,6 +300,7 @@ nav ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
+  font-size: 1.6em;
   color: #aaa;
   font-weight: 800;
   text-transform: uppercase;
@@ -307,55 +309,55 @@ nav ul li a {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+  transition: all 1s;
 }
 nav ul li a:hover {
-  color: #555;
+  color: white;
 }
 
-nav.blend ul li a {
+nav.navtransition ul li a {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   z-index: 1;
 }
-nav.blend ul li a:hover {
+nav.navtransition ul li a:hover {
   color: #fff;
 }
-nav.blend ul li a:before,
-nav.blend ul li a:after {
+nav.navtransition ul li a:before,
+nav.navtransition ul li a:after {
   position: absolute;
   width: 0px;
   height: 100%;
   top: 0;
+  z-index: -1;
+  opacity: 0.75;
   bottom: 0;
-  background: blue;
+  background: black;
   transition: all .5s;
   margin: auto;
   content: '.';
   color: transparent;
-  z-index: -1;
-  opacity: 0.75;
 }
-nav.blend ul li a:before {
+nav.navtransition ul li a:before {
   left: 0;
 }
-nav.blend ul li a:after {
+nav.navtransition ul li a:after {
   right: 0;
 }
 
-nav.blend ul li a:hover:after,
-nav.blend ul li a:hover:before {
+nav.navtransition ul li a:hover:after,
+nav.navtransition ul li a:hover:before {
   width: 100%;
 }
 @media screen and (max-width : 576px) {
-  .blend{
+  .navtransition{
     display: none;
   }
 }
 #SlideshowBG{
 width: 100%;
-height: 100vh;
+height: 110vh;
 background-position: center center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -381,3 +383,8 @@ background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7
     background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
   }
 }
+.active{
+  font-size: 1.7em;
+  color:rgb(165, 246, 172)
+}
+
