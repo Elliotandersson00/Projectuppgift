@@ -103,7 +103,7 @@ section .loader2 .dot {
   overflow-x: hidden;
   transition: 1s;
   padding-top: 70px;
-  -webkit-animation:SlideshowBG 30s linear infinite 0s;
+  -webkit-animation: SlideshowBG 30s linear infinite 0s;
   animation: SlideshowBG;
 }
 
@@ -259,4 +259,86 @@ nav.navtransition ul li a:hover:before {
 .active {
   font-size: 1.7em;
   color: rgb(165, 246, 172);
+}
+
+.slideText div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slideText div:first-of-type {
+  /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite ease-in-out;
+}
+
+.slideText div:last-of-type {
+  width: 0px;
+  animation: reveal 7s infinite ease-in-out;
+}
+
+.slideText div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s infinite ease-in-out;
+}
+
+#miniText span {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
 }
