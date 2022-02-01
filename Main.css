@@ -1,30 +1,11 @@
-
-
-
 body {
-  font-family: consolas ;
+  font-family: consolas;
   padding: 0;
   margin: 0;
   /* background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
   background-size: cover;
   background-repeat: no-repeat; */
-  }
-
-.topnav {
-  color: aqua;
 }
-
-.topnav #myLinks {
-  display: none;
-  color: aqua;
-}
-
-#myLinks a {
-  color: gray;
-}
-
-
-
 
 * {
   margin: 0;
@@ -32,7 +13,6 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-
 
 section {
   position: absolute;
@@ -45,20 +25,10 @@ section {
   animation: changeColor 5s linear infinite;
 }
 
-/* @keyframes changeColor {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filtezr: hue-rotate(360deg);
-  }
-} */
-
 section .loader {
   position: relative;
   display: flex;
   align-items: flex-end;
-  
 }
 @media screen and (max-width: 576px) {
   section .loader {
@@ -122,17 +92,6 @@ section .loader2 .dot {
   }
 }
 
-/* 
-@media (max-width: 576px) {
-  body {
-    height: 100%;
-    width: 1000px;
-    background-color: hsla(200, 40%, 30%, 0.4);
-    background-image: url("jr-korpa-jD1huE0iPk0-unsplash.jpg");
-    background-repeat: no-repeat;
-  }
-} */
-
 .sidenav {
   height: 100%;
   width: 0%;
@@ -182,11 +141,11 @@ section .loader2 .dot {
   }
 }
 
-@media screen and (min-width : 576px) {
-  .sidenav{
+@media screen and (min-width: 576px) {
+  .sidenav {
     display: none;
   }
-  #hamburger{
+  #hamburger {
     display: none;
   }
 }
@@ -195,7 +154,6 @@ nav {
   width: 80%;
   margin: 0 auto;
   padding: 0px 0;
-  
 }
 
 /* By Dominik Biedebach @domobch */
@@ -245,9 +203,9 @@ nav.navtransition ul li a:after {
   opacity: 0.75;
   bottom: 0;
   background: black;
-  transition: all .5s;
+  transition: all 0.5s;
   margin: auto;
-  content: '.';
+  content: ".";
   color: transparent;
 }
 nav.navtransition ul li a:before {
@@ -261,41 +219,40 @@ nav.navtransition ul li a:hover:after,
 nav.navtransition ul li a:hover:before {
   width: 100%;
 }
-@media screen and (max-width : 576px) {
-  .navtransition{
+@media screen and (max-width: 576px) {
+  .navtransition {
     display: none;
   }
 }
-#SlideshowBG{
-width: 100%;
-height: 110vh;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-backface-visibility: hidden;
-animation: SlideshowBG 30s linear infinite 0s;
-animation-timing-function:ease-in-out;
-background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+#SlideshowBG {
+  width: 100%;
+  height: 110vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: SlideshowBG 30s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
-@keyframes SlideshowBG{
-  0%{
+@keyframes SlideshowBG {
+  0% {
     background-image: url("https://wallpaperaccess.com/full/277110.jpg");
   }
-  25%{
+  25% {
     background-image: url("https://wallpapercave.com/wp/X27PjjN.jpg");
   }
-  50%{
+  50% {
     background-image: url("https://cdn.wallpapersafari.com/2/1/cJ2NUE.jpg");
   }
-  75%{
+  75% {
     background-image: url("https://wallpaper.dog/large/10822068.jpg");
   }
-  100%{
+  100% {
     background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
   }
 }
-.active{
+.active {
   font-size: 1.7em;
-  color:rgb(165, 246, 172)
+  color: rgb(165, 246, 172);
 }
-
