@@ -4,18 +4,18 @@ body {
     background-image: url('backg.jpg');
     font-family: consolas ;
     background-size: cover;
+    margin: 0;
+
     }
     .input{
 
-
- 
         color: rgb(255, 255, 255);
         display:flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
         margin-left: 45px;
-      
+
       }
       .button{
         background-color: #4CAF50;
@@ -38,7 +38,7 @@ body {
         border-radius: 15px;
         transition: background 0.25s, box-shadow 0.25s;
         background: rgb(237, 255, 238);
-      
+
       }
       .button:hover
       {
@@ -48,7 +48,7 @@ body {
         transition: 1s;
       }
       h1{
-        
+
         color: rgb(39, 45, 49);
         border-left: 2px solid #425e42 ;
         border-right: 2px solid #425e42 ;
@@ -60,7 +60,7 @@ body {
       .h1{
         display: flex;
         justify-content: center;
-        
+
       }
       .box
       {
@@ -78,7 +78,7 @@ body {
       {
         box-shadow: 9px 9px 9px white;
         border: 3px solid white;
-        
+
       }
       .inputbar{
         flex-grow: 1;
@@ -91,27 +91,21 @@ body {
       }
       .inputbar:focus{
       background: white;
-      
+
       }
-     
+
       .footer-container
       {
           background-color: rgb(199, 199, 199) ;
-        
-         position: fixed;
-         left: 0%;
-         bottom: 0;
-         width: 100%;
-         height: 160px;
-         margin: 0;
-         padding: 0%;
-         
-        border-top: 1px solid black;
+          width: 100%;
+          position: sticky;
       
+         border-top: 1px solid black;
+         margin-top: 120px;
+
       }
       .footer{
           width: 100%;
-          height: 40vh;
           background-color:rgb(199, 199, 199) ;
           display: flex;
           justify-content: center;
@@ -125,9 +119,10 @@ body {
           display: flex;
           flex-direction: column;
           margin-right: 4rem;
+          flex: 1 0 auto;
       }
       .footer-heading h2 {
-         margin-bottom: 1rem; 
+         margin-bottom: 1rem;
          color: rgb(39, 45, 49);
       }
       .footer-heading a{
@@ -139,25 +134,28 @@ body {
           color: white;
           transition: 0.5s ease-out;
       }
-      @media screen and (max-widht: 1080px){
+      @media screen and (max-width: 1080px){
          .footer{
-             height:50vh;
+             
 
          }
       }
- @media screen and (max-widht: 576px){
+ @media screen and (max-width: 576px){
          .footer-3{
              display: none ;
-             
+         }
+         .footer-container{
+           height: 100px;
+          
          }
       }
-     
 
-body {
+
+/* body {
   background-image: url("backg.jpg");
   font-family: consolas;
-}
-
+} */
+/* 
 .topnav {
   color: aqua;
 }
@@ -229,30 +227,34 @@ h1 {
 }
 .inputbar:focus {
   background: white;
-}
-.footer {
+} */
+/* .footer {
   border-top: 1px solid rgb(199, 199, 199);
   height: 200px;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(189, 176, 176);
   color: white;
+
+
 }
 .footerleft {
   float: left;
   width: 45%;
   border-right: #4caf50;
+  
 }
 
 .footercenter {
   float: left;
   width: 36%;
-}
-* {
+ 
+} */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
