@@ -9,46 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="jsMain.js"></script>
   </head>
-
+  
   <body>
 
-    <section>
-      <div class="loader">
-        <div class="dot" style="--i:0;"></div>
-        <div class="dot" style="--i:1;"></div>
-        <div class="dot" style="--i:2;"></div>
-        <div class="dot" style="--i:3;"></div>
-        <div class="dot" style="--i:4;"></div>
-        <div class="dot" style="--i:5;"></div>
-        <div class="dot" style="--i:6;"></div>
-        <div class="dot" style="--i:7;"></div>
-        <div class="dot" style="--i:8;"></div>
-        <div class="dot" style="--i:9;"></div>
-      </div>
-    </section>
-     
+    <div id="SlideshowBG">
+      <nav class="navtransition">
+        <ul>
+          <li><a class="active" href="Startsida.html">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="Andreas.html">Andreas</a></li>
+          <li><a href="#">Emil</a></li>
+          <li><a href="#">Elliot</a></li>
+          <li><a href="kontakt.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="StartSida.html">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="Andreas.html">Andreas</a>
+        <a href="#">Emil</a>
+        <a href="#">Elliot</a>
+        <a href="kontakt.html">Contact</a>
 
-      <!-- <div id="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a class="icon" onclick="myFunction()">
-          <div class="topnav">
-                  <i class="fa fa-bars"></i>
-                </a>
 
-               </div>
-   
-    </div> 
-    <div class="kontakt kontaktnav">
-      <a href="kontakt.html" class="kontakt" > Kontakt </a>
-    </div>
 
-               </div> -->
-     <!-- emil provar git -->
-
-    </div>
-
+    
     <!-- </div>  -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -60,6 +46,45 @@
       <a href="#">Contact</a>
     </div>
     <span id="hamburger" onclick="openNav()">&#9776;</span>
+
+
+    <!--Dot animation-->
+    <section>
+      <div class="loader">
+        <!-- --d custom prop, så vi kan använda dem i var() räknaren -->
+        <div class="dot" style="--d:0;"></div>
+        <div class="dot" style="--d:1;"></div>
+        <div class="dot" style="--d:2;"></div>
+        <div class="dot" style="--d:3;"></div>
+        <div class="dot" style="--d:4;"></div>
+        <div class="dot" style="--d:5;"></div>
+        <div class="dot" style="--d:6;"></div>
+        <div class="dot" style="--d:7;"></div>
+        <div class="dot" style="--d:8;"></div>
+        <div class="dot" style="--d:9;"></div>
+      </div>
+      <h1>Welcome</h1>
+      <div class="loader2">
+        <!-- --d custom prop, så vi kan använda dem i var() räknaren -->
+        <div class="dot" style="--d:0;"></div>
+        <div class="dot" style="--d:1;"></div>
+        <div class="dot" style="--d:2;"></div>
+        <div class="dot" style="--d:3;"></div>
+        <div class="dot" style="--d:4;"></div>
+        <div class="dot" style="--d:5;"></div>
+        <div class="dot" style="--d:6;"></div>
+        <div class="dot" style="--d:7;"></div>
+        <div class="dot" style="--d:8;"></div>
+        <div class="dot" style="--d:9;"></div>
+
+      </div>
+
+    </div>
+
+      
+
+
+    
 
 
   </body>

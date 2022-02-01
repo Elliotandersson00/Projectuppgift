@@ -1,7 +1,14 @@
 
 
 
-
+body {
+  font-family: consolas ;
+  padding: 0;
+  margin: 0;
+  /* background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80");
+  background-size: cover;
+  background-repeat: no-repeat; */
+  }
 
 .topnav {
   color: aqua;
@@ -23,47 +30,100 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 
 section {
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #435d6c;
+  flex-direction: column;
+  animation: changeColor 5s linear infinite;
 }
+
+/* @keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filtezr: hue-rotate(360deg);
+  }
+} */
 
 section .loader {
   position: relative;
   display: flex;
+  align-items: flex-end;
+  
 }
-
+@media screen and (max-width: 576px) {
+  section .loader {
+    margin-top: -50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  section .loader {
+    margin-top: -400px;
+  }
+}
 section .loader .dot {
   position: relative;
   display: block;
   width: 20px;
   height: 20px;
-  background: #72787e;
-  box-shadow: 0 0 10px grey, 0 0 20px rgb(231, 231, 231),
-    0 0 40px rgb(231, 231, 231), 0 0 60px rgb(231, 231, 231),
-    0 0 80px rgb(231, 231, 231), 0 0 100px rgb(231, 231, 231);
-  margin: 20px 10px;
-  border-radius: 50%;
+  background: #7df3f7;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255),
+    0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255);
+  margin: 20px 10px; /* mellanrum*/
+  border-radius: 50%; /* rund*/
+  transform: scale(0.1);
   animation: animateDot 2s linear infinite;
-  /*går från dot 1 till dot 9*/
-  animation-delay: calc(0.1s * var(--i));
+  animation-delay: calc(0.1s * var(--d)); /*går från dot 1 till dot 9*/
+}
+
+section h1 {
+  font-family: consolas;
+  font-weight: 200;
+  letter-spacing: 10px;
+}
+
+section .loader2 {
+  position: relative;
+  display: flex;
+}
+
+section .loader2 .dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #7df3f7;
+  box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255),
+    0 0 40px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255),
+    0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255);
+  margin: 20px 10px; /* mellanrum*/
+  border-radius: 50%; /* rund*/
+  transform: scale(0.1); /* startar på 0.1 av sig själv*/
+  animation: animateDot 2s linear infinite;
+  animation-delay: calc(-0.1s * var(--d)); /*går från dot 9 till dot 1*/
 }
 
 @keyframes animateDot {
-  10% {
+  0% {
     transform: scale(0.1);
+  }
+  10% {
+    transform: scale(1);
   }
 }
 
-/* @media (max-width: 576px) {
+/* 
+@media (max-width: 576px) {
   body {
     height: 100%;
     width: 1000px;
@@ -96,7 +156,7 @@ section .loader .dot {
 }
 
 .sidenav a:hover {
-  color:rgb(22, 26, 255);
+  color: rgb(22, 26, 255);
 }
 
 .sidenav .closebtn {
@@ -106,15 +166,136 @@ section .loader .dot {
   font-size: 50px;
   margin-left: 50px;
 }
-#hamburger{
+#hamburger {
   color: rgb(136, 136, 255);
   cursor: default;
+  margin-bottom: 500px;
+  margin-right: 400px;
   font-size: 40px;
 }
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
+@media screen and (min-width : 576px) {
+  .sidenav{
+    display: none;
+  }
+  #hamburger{
+    display: none;
+  }
+}
 
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 0;
+  
+}
+
+/* By Dominik Biedebach @domobch */
+nav ul {
+  list-style: none;
+  text-align: center;
+  position: sticky;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 1s;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+nav.navtransition ul li a {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.navtransition ul li a:hover {
+  color: #fff;
+}
+nav.navtransition ul li a:before,
+nav.navtransition ul li a:after {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  opacity: 0.75;
+  bottom: 0;
+  background: black;
+  transition: all .5s;
+  margin: auto;
+  content: '.';
+  color: transparent;
+}
+nav.navtransition ul li a:before {
+  left: 0;
+}
+nav.navtransition ul li a:after {
+  right: 0;
+}
+
+nav.navtransition ul li a:hover:after,
+nav.navtransition ul li a:hover:before {
+  width: 100%;
+}
+@media screen and (max-width : 576px) {
+  .navtransition{
+    display: none;
+  }
+}
+#SlideshowBG{
+width: 100%;
+height: 110vh;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+backface-visibility: hidden;
+animation: SlideshowBG 30s linear infinite 0s;
+animation-timing-function:ease-in-out;
+background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+@keyframes SlideshowBG{
+  0%{
+    background-image: url("https://wallpaperaccess.com/full/277110.jpg");
+  }
+  25%{
+    background-image: url("https://wallpapercave.com/wp/X27PjjN.jpg");
+  }
+  50%{
+    background-image: url("https://cdn.wallpapersafari.com/2/1/cJ2NUE.jpg");
+  }
+  75%{
+    background-image: url("https://wallpaper.dog/large/10822068.jpg");
+  }
+  100%{
+    background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
+  }
+}
+.active{
+  font-size: 1.7em;
+  color:rgb(165, 246, 172)
+}
 
