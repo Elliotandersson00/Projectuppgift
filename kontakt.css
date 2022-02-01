@@ -123,12 +123,12 @@ h1 {
   color: white;
   transition: 0.5s ease-out;
 }
-@media screen and (max-widht: 1080px) {
+@media screen and (max-width: 1080px) {
   .footer {
     height: 50vh;
   }
 }
-@media screen and (max-widht: 576px) {
+@media screen and (max-width: 576px) {
   .footer-3 {
     display: none;
   }

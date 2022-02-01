@@ -1,18 +1,21 @@
 
-// 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+ function openNav() {
+   document.getElementById("buttonjs").style.width = "250px", display = "none";
+   var z = document.getElementById("hamburger");
+  if (z.style.display === "none") {
+    z.style.display = "block";
   } else {
-    x.style.display = "block";
+    z.style.display = "none";
   }
-}
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+ }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+ function closeNav() {
+   document.getElementById("buttonjs").style.width = "0";
+   var z = document.getElementById("hamburger");
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "block";
+  }
 }
 

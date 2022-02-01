@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
     <link rel="stylesheet" href="kontakt.css">
+    <script src="jsMain.js"></script>
     <title>Kontakt</title>
 
 </head>
 
-   
-
-
 <body>
+  <nav class="navtransition">
+    <ul>
+      <li><a  href="Startsida.html">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="Andreas.html">Andreas</a></li>
+      <li><a href="#">Emil</a></li>
+      <li><a href="#">Elliot</a></li>
+      <li><a class="active" href="kontakt.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="buttonjs" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="StartSida.html">Home</a>
+    <a href="Portfolio.html">Portfolio</a>
+    <a href="Andreas.html">Andreas</a>
+    <a href="Emil.html">Emil</a>
+    <a href="Elliot.html">Elliot</a>
+    <a class="active" href="kontakt.html">Contact</a>
+  </div>
+  <span id="hamburger" onclick="openNav()">&#9776;</span>
+
   <div class="klassformular">
     <h1>Kontaktformulär</h1>
   </div>

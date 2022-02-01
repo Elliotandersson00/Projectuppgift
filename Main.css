@@ -45,21 +45,22 @@ section .loader .dot {
   display: block;
   width: 20px;
   height: 20px;
-  background: #7df3f7;
+  background: white;
   box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255),
     0 0 40px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255),
     0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255);
   margin: 20px 10px; /* mellanrum*/
   border-radius: 50%; /* rund*/
   transform: scale(0.1);
-  animation: animateDot 2s linear infinite;
+  animation: animateDot 5s linear infinite;
   animation-delay: calc(0.1s * var(--d)); /*går från dot 1 till dot 9*/
 }
 
 section h1 {
   font-family: consolas;
   font-weight: 200;
-  letter-spacing: 10px;
+  letter-spacing: 25px;
+  color: rgb(252, 252, 252);
 }
 
 section .loader2 {
@@ -72,14 +73,14 @@ section .loader2 .dot {
   display: block;
   width: 20px;
   height: 20px;
-  background: #7df3f7;
+  background: white;
   box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255),
     0 0 40px rgb(255, 255, 255), 0 0 60px rgb(255, 255, 255),
     0 0 80px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255);
   margin: 20px 10px; /* mellanrum*/
   border-radius: 50%; /* rund*/
   transform: scale(0.1); /* startar på 0.1 av sig själv*/
-  animation: animateDot 2s linear infinite;
+  animation: animateDot 5s linear infinite;
   animation-delay: calc(-0.1s * var(--d)); /*går från dot 9 till dot 1*/
 }
 
@@ -95,21 +96,22 @@ section .loader2 .dot {
 .sidenav {
   height: 100%;
   width: 0%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  /* background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"); */
   overflow-x: hidden;
   transition: 1s;
   padding-top: 70px;
+  -webkit-animation:SlideshowBG 30s linear infinite 0s;
+  animation: SlideshowBG;
 }
 
 .sidenav a {
   padding: 10px 20px 20px 40px;
   text-decoration: none;
   font-size: 30px;
-  color: rgb(162, 162, 255);
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -126,7 +128,7 @@ section .loader2 .dot {
   margin-left: 50px;
 }
 #hamburger {
-  color: rgb(136, 136, 255);
+  color: black;
   cursor: default;
   margin-bottom: 500px;
   margin-right: 400px;
@@ -170,7 +172,7 @@ nav ul li a {
   padding: 15px;
   text-decoration: none;
   font-size: 1.6em;
-  color: #aaa;
+  color: black;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 10px;
@@ -191,7 +193,7 @@ nav.navtransition ul li a {
   z-index: 1;
 }
 nav.navtransition ul li a:hover {
-  color: #fff;
+  color: white;
 }
 nav.navtransition ul li a:before,
 nav.navtransition ul li a:after {
@@ -233,23 +235,25 @@ nav.navtransition ul li a:hover:before {
   backface-visibility: hidden;
   animation: SlideshowBG 30s linear infinite 0s;
   animation-timing-function: ease-in-out;
+  opacity: 0.8;
+  overflow: hidden;
   background-image: url("https://images.unsplash.com/photo-1548679847-1d4ff48016c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
 @keyframes SlideshowBG {
   0% {
-    background-image: url("https://wallpaperaccess.com/full/277110.jpg");
+    background-image: url("https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   25% {
-    background-image: url("https://wallpapercave.com/wp/X27PjjN.jpg");
+    background-image: url("https://images.pexels.com/photos/853199/pexels-photo-853199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   50% {
-    background-image: url("https://cdn.wallpapersafari.com/2/1/cJ2NUE.jpg");
+    background-image: url("https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   }
   75% {
-    background-image: url("https://wallpaper.dog/large/10822068.jpg");
+    background-image: url("https://images.pexels.com/photos/976917/pexels-photo-976917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   100% {
-    background-image: url("https://wow.zamimg.com/uploads/blog/images/20516-afterlives-ardenweald-4k-desktop-wallpapers.jpg");
+    background-image: url("https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
 }
 .active {
