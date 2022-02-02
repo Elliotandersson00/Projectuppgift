@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-    <title>Portfolio</title>
-</head>
-<body>
+
     
 
-
+    
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="Main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
     <link rel="stylesheet" href="Portfolio.css">
@@ -47,42 +40,44 @@
             <a href="#">Contact</a>
         </div>
         <span id="hamburger" onclick="openNav()">&#9776;</span>
+        
         <div class="welcomeText">
-            <h1>HELLO</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet et fugit eius cumque. Corrupti dolores voluptatem iusto sapiente obcaecati temporibus?
+            <h1>Portfolio</h1>
+            <h3>Ett bildspel med våra tidigare arbeten, klicka på den specifika bilden
+                för att komma till projectet!
             </h3>
-            <img src="http://assets.stickpng.com/images/58f8bcf70ed2bdaf7c128307.png" alt="">
+            <img class="img1" src="https://www.freeiconspng.com/thumbs/up-arrow-png/orange-up-arrow-png-21.png" alt="">
+            <img class="img2" src="https://www.freeiconspng.com/thumbs/up-arrow-png/orange-up-arrow-png-21.png" alt="">
         </div>
+</div>
+<div class="container">
 
-    </div>
-</body>
+    <!-- BUTTONS (input/labels) -->
+    <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
+    <label class="btn" for="slide-1-trigger"></label>
+    <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
+    <label class="btn" for="slide-2-trigger"></label>
+    <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
+    <label class="btn" for="slide-3-trigger"></label>
+    <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
+    <label class="btn" for="slide-4-trigger"></label>
 
-
-        <div class="container">
-
-            <!-- BUTTONS (input/labels) -->
-            <input type="radio" name="slider" id="slide-1-trigger" class="trigger" checked>
-            <label class="btn" for="slide-1-trigger"></label>
-            <input type="radio" name="slider" id="slide-2-trigger" class="trigger">
-            <label class="btn" for="slide-2-trigger"></label>
-            <input type="radio" name="slider" id="slide-3-trigger" class="trigger">
-            <label class="btn" for="slide-3-trigger"></label>
-            <input type="radio" name="slider" id="slide-4-trigger" class="trigger">
-            <label class="btn" for="slide-4-trigger"></label>
-    
-            <!-- SLIDES -->
-            <div class="slide-wrapper">
-                <div id="slide-role">
-                    <div class="slide slide-1"></div>
-                    <div class="slide slide-2"></div>
-                    <div class="slide slide-3"></div>
-                    <div class="slide slide-4"></div>
-                </div>
-            </div>
-    
+    <!-- SLIDES -->
+    <div class="slide-wrapper">
+        <div id="slide-role">
+            <a href="https://github.com/Elliotandersson00/GubbenIRummetMain" class="slide slide-1" target="_blank" title="GubbenIRummet"></a> 
+            <a href="https://github.com/jenspalmqvist/CSharpCourse2021/tree/master/GroupProjects/Grupp8ITHS/DungeonExplorer" class="slide slide-2" target="_blank" title="DungeonExplorer"></a>
+            <a href="https://github.com/jenspalmqvist/CSharpCourse2021/tree/master/CarRentalEntityFramework" class="slide slide-3" target="_blank" title="CarRentalEntityFramework"></a>
+            <a class="slide slide-4" target="_blank"></a>
         </div>
     </div>
 
+</div>
+
+
+</div>
+
 
 </body>
+
 </html>
