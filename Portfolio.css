@@ -1,5 +1,5 @@
 .welcomeText {
-  color: black;
+  color: rgb(255, 255, 255);
   font-style: consolas;
   height: 500px;
 }
@@ -41,16 +41,61 @@
   }
 }
 
-.welcomeText p {
+.welcomeText h3 {
+  color: rgb(235, 235, 235);
   margin-top: 2%;
   margin-left: 15.5%;
+  margin-right: 50%;
   display: flex;
   justify-content: flex-start;
-  animation: pText 3s linear both;
+  -webkit-animation: pText 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: pText 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @keyframes pText {
   0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.welcomeText img {
+  width: 10%;
+  height: 20%;
+  margin-left: 50%;
+  margin-right: 50%;
+  -webkit-animation: swirl-in-fwd 1.3s ease-out both;
+  animation: swirl-in-fwd 1.3s ease-out both;
+}
+
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
   }
 }
 
