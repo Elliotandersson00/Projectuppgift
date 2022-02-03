@@ -1,3 +1,90 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
 body {
   font-family: consolas;
   padding: 0;
@@ -33,12 +120,57 @@ section .loader {
 @media screen and (max-width: 576px) {
   section .loader {
     margin-top: -50%;
+
+  }
+  section{
+     width: 100%;
+  }
+  section h1{
+    font-size: 20px;
+    
+    letter-spacing: 0px;
+    font-weight: 100;
+  }
+   section .loader .RemoveDot1{
+    display: none;
+  }
+  section .loader2 .RemoveDot2{
+    display: none;
+  }
+  #miniText span {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: red;
+  }
+  
+  .slideText{
+    width: 20px;
+    margin-left: -200px;
+    font-size: 0.7em;
+  }
+  @keyframes slidein {
+    0% {
+      margin-left: -400px;
+    }
+    20% {
+      margin-left: -400px;
+    }
+    35% {
+      margin-left: -100px;
+     
+    }
+    100% {
+      margin-left: -100px;
+      
+    }
   }
 }
 @media screen and (min-width: 576px) {
   section .loader {
     margin-top: -400px;
   }
+  
 }
 section .loader .dot {
   position: relative;
@@ -94,23 +226,25 @@ section .loader2 .dot {
 }
 
 .sidenav {
-  height: 100%;
   width: 0%;
   position: absolute;
   z-index: 1;
   top: 0;
-  /* background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"); */
+  background-color: white;
+  opacity: 0.5;
+   /* background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"); */
   overflow-x: hidden;
   transition: 1s;
   padding-top: 70px;
   -webkit-animation: SlideshowBG 30s linear infinite 0s;
-  animation: SlideshowBG;
+  animation: SlideshowBG; 
 }
 
 .sidenav a {
   padding: 10px 20px 20px 40px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 0.3em;
   color: black;
   display: block;
   transition: 0.3s;
@@ -123,6 +257,7 @@ section .loader2 .dot {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
+  margin-top: 30px;
   right: 25px;
   font-size: 50px;
   margin-left: 50px;
@@ -130,8 +265,9 @@ section .loader2 .dot {
 #hamburger {
   color: black;
   cursor: default;
-  margin-bottom: 500px;
-  margin-right: 400px;
+  margin-bottom: 400px;
+  margin-right: 100px;
+  
   font-size: 40px;
 }
 @media screen and (max-height: 450px) {
@@ -224,7 +360,10 @@ nav.navtransition ul li a:hover:before {
 @media screen and (max-width: 576px) {
   .navtransition {
     display: none;
+
   }
+  
+  
 }
 #SlideshowBG {
   width: 100%;
@@ -289,7 +428,7 @@ nav.navtransition ul li a:hover:before {
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
   font-size: 1.1em;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 @keyframes showup {
