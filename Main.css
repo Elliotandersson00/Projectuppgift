@@ -481,3 +481,73 @@ nav.navtransition ul li a:hover:before {
     width: 355px;
   }
 }
+.footer-container
+{
+    background-color: rgb(173, 173, 173) ;
+    width: 100%;
+   margin-top: 120px;
+   margin-bottom: 0%;
+   
+
+}
+.footer{
+
+  position: absolute;
+  bottom: 0;
+    width: 100%;
+    background-color: rgb(173, 173, 173) ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+      .footer-heading
+      {
+          display: flex;
+          flex-direction: column;
+       
+          
+          
+      }
+      .footer-heading h2 {
+         margin-bottom: 10px;
+         color: rgb(255, 255, 255);
+         border-bottom: 1px solid rgb(90, 90, 90);
+      }
+      .footer-heading a{
+          color: #ffffff;
+          text-decoration: none;
+      
+      }
+      .footer-heading a:hover{
+          color: #4caf50;
+          transition: 0.3s ease-out;
+      }
+      /* @media screen and (max-width: 1080px){
+         .footer{
+             
+
+         }
+      } */
+ @media screen and (max-width: 576px){
+         .footer-3{
+             display: none ;
+         }
+         .footer-container{
+           height: 100px;
+          
+         }
+         .footer-heading a{
+           
+           border-left: 1px solid black;
+           border-top: none;
+           
+         }
+         .footer-heading h2 {
+           border-bottom: none;
+         }
+      }
+
