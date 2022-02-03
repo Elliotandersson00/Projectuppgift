@@ -1,69 +1,8 @@
 body {
-
-    background-image: url('backg.jpg');
-    font-family: consolas ;
-    background-size: cover;
-    margin: 0;
-    
-
-    }
-    .input{
-
-        color: rgb(255, 255, 255);
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        margin-left: 45px;
-
-      }
-      .button{
-        background-color: #4CAF50;
-        border: 1px solid white;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-left: 45px;
-        border-radius: 25px;
-        transition: 1s ease;
-      }
-      #freetext{
-        flex-grow: 1;
-        padding: 5px;
-        outline: none;
-        border: 1px solid rgb(165, 246, 172);
-        border-radius: 15px;
-        transition: background 0.25s, box-shadow 0.25s;
-        background: rgb(237, 255, 238);
-
-      }
-      .button:hover
-      {
-        background-color: white;
-        color:  #4CAF50;
-        border: 1px solid #4CAF50;
-        transition: 1s;
-      }
-  
-   
-      .inputbar{
-        flex-grow: 1;
-        padding: 10px;
-        outline: none;
-        border: 1px solid rgb(165, 246, 172);
-        border-radius: 25px;
-        background: rgb(237, 255, 238);
-        transition: background 0.25s, box-shadow 0.25s;
-      }
-      .inputbar:focus{
-      background: white;
-
-      }
-
- 
+  font-family: consolas;
+  background-size: cover;
+  margin: 0;
+}
 .input {
   color: rgb(255, 255, 255);
   display: flex;
@@ -73,7 +12,7 @@ body {
   margin-left: 45px;
 }
 .button {
-  background-color: #4caf50;
+  background-color: #000000;
   border: 1px solid white;
   color: white;
   padding: 15px 32px;
@@ -96,41 +35,11 @@ body {
 }
 .button:hover {
   background-color: white;
-  color: #4caf50;
-  border: 1px solid #4caf50;
+  color: #000000;
+  border: 1px solid #000000;
   transition: 1s;
 }
-h1 {
-  color: rgb(39, 45, 49);
-  border-left: 2px solid #425e42;
-  border-right: 2px solid #425e42;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 20px;
-  box-shadow: 9px 9px 9px #425e42;
-}
 
-.klassformular {
-  display: flex;
-  justify-content: center;
-}
-
-
-.box {
-  opacity: 0.9;
-  border-radius: 25px;
-  width: 300px;
-  border: 3px solid #425e42;
-  padding: auto;
-  height: max-content;
-  margin: auto;
-  box-shadow: 9px 9px 9px #425e42;
-  transition: 1s ease-out;
-}
-.box:hover {
-  box-shadow: 9px 9px 9px white;
-  border: 3px solid white;
-}
 .inputbar {
   flex-grow: 1;
   padding: 10px;
@@ -143,74 +52,46 @@ h1 {
 .inputbar:focus {
   background: white;
 }
-.footer-container
-{
-    background-color: rgb(173, 173, 173) ;
-    width: 100%;
-   margin-top: 120px;
-   margin-bottom: 0%;
-   
 
-}
-.footer{
-
-  position: absolute;
-  bottom: 0;
-    width: 100%;
-    background-color: rgb(173, 173, 173) ;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-
+h1 {
+  color: rgb(255, 255, 255);
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 9px 9px 9px #000000;
 }
 
-      .footer-heading
-      {
-          display: flex;
-          flex-direction: column;
-       
-          
-          
-      }
-      .footer-heading h2 {
-         margin-bottom: 10px;
-         color: rgb(255, 255, 255);
-         border-bottom: 1px solid rgb(90, 90, 90);
-      }
-      .footer-heading a{
-          color: #ffffff;
-          text-decoration: none;
-      
-      }
-      .footer-heading a:hover{
-          color: #4caf50;
-          transition: 0.3s ease-out;
-      }
-      /* @media screen and (max-width: 1080px){
-         .footer{
-             
+.klassformular {
+  display: flex;
+  justify-content: center;
+}
 
-         }
-      } */
- @media screen and (max-width: 576px){
-         .footer-3{
-             display: none ;
-         }
-         .footer-container{
-           height: 100px;
-          
-         }
-         .footer-heading a{
-           
-           border-left: 1px solid black;
-           border-top: none;
-           
-         }
-         .footer-heading h2 {
-           border-bottom: none;
-         }
-      }
-
-
+.box {
+  opacity: 0.9;
+  border-radius: 25px;
+  width: 300px;
+  border: 3px solid #000000;
+  padding: auto;
+  height: max-content;
+  margin: auto;
+  box-shadow: 9px 9px 9px #000000;
+  transition: 1s ease-out;
+}
+.box:hover {
+  box-shadow: 9px 9px 9px white;
+  border: 3px solid white;
+}
+.inputbar {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  background: rgb(237, 255, 238);
+  transition: background 0.25s, box-shadow 0.25s;
+}
+.inputbar:focus {
+  background: white;
+}
