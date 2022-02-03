@@ -471,12 +471,17 @@ nav.navtransition ul li a:hover:before {
     width: 240px;
   }
 }
+
 .footer-container {
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
 }
-.footer {
+
+.footer{
+
+  
+
   bottom: 0;
   width: 100%;
   background-color: rgb(187, 187, 187);
