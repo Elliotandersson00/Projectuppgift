@@ -1,9 +1,6 @@
-
-=======
-.flexbox{
+.flexbox {
   position: absolute;
   width: 100%;
-  height: 110vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -11,11 +8,9 @@
   margin-top: 10%;
 }
 
-
 .welcomeText {
   color: rgb(255, 255, 255);
   font-style: consolas;
-  
 }
 
 .welcomeText h1 {
@@ -74,15 +69,6 @@
   }
 }
 
-.welcomeText .img1 {
-  width: auto;
-  height: auto;
-  margin-top: 30%;
-  margin-left: 30%;
-  -webkit-animation: swirl-in-fwd 1.3s ease-out both;
-  animation: swirl-in-fwd 1.3s ease-out both;
-}
-
 .welcomeText .img2 {
   width: 40%;
   height: 40%;
@@ -126,7 +112,7 @@ input[type="radio"] {
   position: absolute;
   height: 60vh;
   width: 50%;
-  padding: 4em; 
+  padding: 4em;
   padding-right: 0;
   display: inline-block;
   left: 50%;
@@ -138,7 +124,7 @@ input[type="radio"] {
   position: relative;
   margin: 0 auto;
   padding: 3em;
-   width: 100%; 
+  width: 100%;
   height: 80%;
   border-radius: 20px;
   box-shadow: 0px 1px 2px 0px rgb(53, 53, 53);
@@ -152,12 +138,11 @@ input[type="radio"] {
 
 @media only screen and (max-width: 576px) {
   .container {
-    
     height: 300px;
     width: 340px;
-     padding: 4em;
-     padding-right: 0; 
-     padding-top:2em ;
+    padding: 4em;
+    padding-right: 0;
+    padding-top: 2em;
     display: inline;
     top: 300px;
     bottom: 400px;
@@ -165,8 +150,8 @@ input[type="radio"] {
   }
   .slide-wrapper {
     width: 100%;
-    padding:0;
-  } 
+    padding: 0;
+  }
   .welcomeText {
     font-size: 0.75em;
     margin-left: 2%;
@@ -181,7 +166,7 @@ input[type="radio"] {
   .welcomeText .img1 {
     display: none;
   }
-  .flexbox{
+  .flexbox {
     height: 50vh;
   }
 }
@@ -215,22 +200,18 @@ input[type="radio"] {
 
 .slide-1 {
   background-image: url("gubbenirummet.jpg");
-  
 }
 
 .slide-2 {
   background-image: url("https://i.gyazo.com/82523270a933270a1baa8432a8a14c64.png");
- 
 }
 
 .slide-3 {
   background-image: url("carrental.jpg");
-  
 }
 
 .slide-4 {
   background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
-  
 }
 
 /*===================
@@ -353,7 +334,7 @@ input[type="radio"]:checked + label.btn::after {
   }
 } */
 
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .btn:nth-of-type(1) {
     left: 32%;
   }
@@ -366,5 +347,4 @@ input[type="radio"]:checked + label.btn::after {
   .btn:nth-of-type(4) {
     left: 77%;
   }
-}  
-
+}
