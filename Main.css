@@ -357,7 +357,7 @@ nav.navtransition ul li a:hover:before {
 }
 #SlideshowBG {
   width: 100%;
-  height: 110vh;
+  height: 90.5vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -471,12 +471,17 @@ nav.navtransition ul li a:hover:before {
     width: 240px;
   }
 }
+
 .footer-container {
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
 }
-.footer {
+
+.footer{
+
+  
+
   bottom: 0;
   width: 100%;
   background-color: rgb(187, 187, 187);
@@ -491,7 +496,7 @@ nav.navtransition ul li a:hover:before {
   flex-direction: column;
 }
 .footer-heading h2 {
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
@@ -529,4 +534,68 @@ nav.navtransition ul li a:hover:before {
   .footer {
     height: -100px;
   }
+  .computer-welcometext h1 {
+    display: none;
+  }
+  .computer-welcometext {
+    display: none;
+  }
+  .circleLogo:hover {
+    display: none;
+  }
+}
+
+.computer-welcometext {
+  display: flex;
+}
+
+.computer-welcometext h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4em;
+  margin-top: 10%;
+  margin-left: 16%;
+  margin-right: 60%;
+  color: white;
+}
+
+.circleLogo {
+  margin-left: 70%;
+  margin-top: 16%;
+  height: 80px;
+  width: 80px;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: center/cover
+    url(https://images.unsplash.com/photo-1486736065690-45e0655d038a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80);
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(-180deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotateY(180deg);
+  }
+}
+
+.circleLogo:hover {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
 }
