@@ -357,7 +357,7 @@ nav.navtransition ul li a:hover:before {
 }
 #SlideshowBG {
   width: 100%;
-  height: 110vh;
+  height: 90.5vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ nav.navtransition ul li a:hover:before {
   flex-direction: column;
 }
 .footer-heading h2 {
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
 }
