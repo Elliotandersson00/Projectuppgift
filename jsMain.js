@@ -1,6 +1,6 @@
 
  function openNav() {
-   document.getElementById("buttonjs").style.width = "250px";
+   document.getElementById("buttonjs").style.width = "295px";
   document.getElementById("hamburger").style.visibility= "hidden";
    
  }

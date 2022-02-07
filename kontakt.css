@@ -109,3 +109,20 @@ h1 {
  
   
 }
+@media screen and (max-width: 576px) {
+   .klassformular{
+     display: none;
+   }
+   .box{
+     border: none;
+     border-radius: none;
+     box-shadow: none;
+     transition: none;
+     margin-top: -15px;
+   }
+   .box:hover{
+     border: none;
+     box-shadow: none;
+     
+   }
+}
