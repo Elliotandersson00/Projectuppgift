@@ -90,11 +90,13 @@ h4{
 }
 
 .lorem{
-   margin: auto;
+  
    padding-left: 3%;
+ ;
     
 }
 .lorem-container{
+  
     width: 400px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
@@ -107,7 +109,7 @@ h4{
 
 .box-bild{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     
 
 }
