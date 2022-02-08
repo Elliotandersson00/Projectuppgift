@@ -97,12 +97,10 @@ body {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.slideflex{
-  height: 100%;
-}
+
+
 #SlideshowBG {
-  width: 100%;
-  height: 92.5vh;
+  height: 89.4vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,9 +472,11 @@ li{
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
- 
- 
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
 }
+
 .circleLogo-footer{
   margin-top: 1%;
   height: 60px;
@@ -663,6 +663,7 @@ li{
     height: 100px;
     
   }
+  
   .footer-heading a {
     font-size: 0.9em;
     border-top: none;
@@ -695,5 +696,10 @@ li{
   }
   nav.navtransition{
     display: none;
+  }
+}
+@media screen and (min-height: 1329px) {
+  #SlideshowBG{
+    height: 92.2vh;
   }
 }
