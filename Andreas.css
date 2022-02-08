@@ -1,7 +1,174 @@
-#test{
-   color: red;
-   position: relative;
-   margin-left: 50%; 
-   margin-right: 50%;
-   margin-top: -50px;
+
+.AIK{
+   height: 400px;
+   width: 700px;
+   margin: 0 auto;
+   margin-top: 50px;
+  border: 1px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
 }
+#video{
+ visibility: hidden;
+ margin-top: 5px;
+}
+.checkbox__list {
+   position: relative;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .checkbox__list li {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ input[type="checkbox"] {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 80px;
+   width: 80px;
+   z-index: 100;
+ }
+ 
+  #check {
+   position: relative;
+   height: 100px;
+   width: 100px;
+   background: #18191f;
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   font-size: 46px;
+   cursor: pointer;
+   margin: 0 4px;
+   border-radius: 20px;
+   box-shadow: -1px -1px 4px yellow,;
+ }
+ 
+ input[type="checkbox"]:checked ~ #check {
+   box-shadow: inset 0 0 2px yellow;
+   color: yellow;
+   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+ }
+
+ .first__name{
+   display: flex;
+   margin: 0 auto;
+   border: 1px solid;
+   height: 100px;
+   width: 600px;
+   justify-content: center;
+   align-items: center;
+ }
+ .last__name{
+  display: flex;
+  border: 1px solid;
+  margin: auto;
+  height: 100px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+ .flip__letter {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.flip__letter span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+  
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite;
+}
+.clickhere__desktop{
+  display: flex;
+  align-items: flex-start;
+  padding: 1px;
+  border: 1px solid;
+  width: 170px;
+  justify-content: center;
+}
+.clickhere__desktop h2{
+  margin-left: -150px;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    color: black;
+    transform: scale(0);
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    color: red;
+    transform: scale(2);
+    opacity: 1;
+    text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    color: black;
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    /* animate nothing to add pause at the end of animation */
+    transform: scale(1);
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+ @media screen and (max-width: 576px) {
+    #check{ 
+      height: 60px;
+      width: 60px;
+    }
+    .AIK{
+      width: 200px;
+      margin-top: 120px;
+    }
+    #video{
+      width: 200px;
+      height: 100px;
+      margin-top: -200px;
+    }
+    .last__name{
+      display: none;
+    }
+    .first__name{
+      width: 300px;
+    }
+    .flip__letter span{
+      font-size: 0.35em;
+      white-space: 0;
+    }
+    .clickhere__desktop{
+      display: none;
+    }
+ }
+ @media screen and (min-width: 576px) {
+  .clickhere__mobile{
+    display: none;
+  }
+}
+ 
