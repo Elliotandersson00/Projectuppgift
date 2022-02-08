@@ -38,6 +38,19 @@ function validation(){
   }
   
 } 
+
+function checkedVideo(){
+  var checkBox1 = document.getElementById("A");
+  var checkBox2 = document.getElementById("I");
+  var checkBox3 = document.getElementById("K");
+  
+  if(checkBox1.checked == true && checkBox2.checked == true && checkBox3.checked == true){
+    document.getElementById("video").style.visibility= "visible";
+  }
+  else{
+    video.style.visibility= "hidden";
+  }
+}
 // function ValidateEmail(inputText)
 // {
 // var mailformat = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
