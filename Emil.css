@@ -190,6 +190,19 @@ ul{
     
     
 }
+.circleLogo-center{
+  margin-top: 1%;
+  height: 120px;
+  width: 120px;
+  align-self: center;
+  justify-content: center ;
+  content: "";
+  border-radius: 50%;
+  background: center/cover
+    url(https://images.unsplash.com/photo-1486736065690-45e0655d038a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80);
+  animation: spin 5s linear infinite;
+
+}
 
 @media screen and (max-width: 576px){
   .breakingpoint-side{
