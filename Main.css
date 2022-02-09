@@ -100,7 +100,7 @@ body {
 
 
 #SlideshowBG {
-  height: 89.4vh;
+  height: 88.6vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -472,9 +472,9 @@ li{
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
- display: flex;
+ /* display: flex;
  justify-content: flex-end;
- align-items: flex-end;
+ align-items: flex-end; */
 }
 
 .circleLogo-footer{
@@ -698,8 +698,8 @@ li{
     display: none;
   }
 }
-@media screen and (min-height: 1329px) {
+@media screen and (min-height: 1200px) {
   #SlideshowBG{
-    height: 92.2vh;
+    height: 91.6vh;
   }
 }
