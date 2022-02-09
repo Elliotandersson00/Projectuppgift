@@ -98,7 +98,6 @@ body {
   -webkit-box-sizing: border-box;
 }
 
-
 #SlideshowBG {
   height: 89.4vh;
   background-position: center center;
@@ -128,12 +127,11 @@ body {
     background-image: url("https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
 }
-.navcontainer{
+.navcontainer {
   display: flex;
   justify-content: flex-start;
 }
 .section {
-  
   position: absolute;
   width: 100%;
   height: 110vh;
@@ -151,12 +149,11 @@ section .loader {
 }
 @media screen and (max-width: 576px) {
   section .loader {
-    margin-top: 50% ;
+    margin-top: 50%;
     margin-left: 15px;
   }
   section .loader2 {
     margin-left: 20px;
-    
   }
   section {
     width: 100%;
@@ -173,8 +170,8 @@ section .loader {
   section .loader2 .RemoveDot2 {
     display: none;
   }
-  
-  #SlideshowBG{
+
+  #SlideshowBG {
     height: 84.4vh;
   }
 
@@ -259,7 +256,7 @@ section .loader2 .dot {
   top: 0;
   background-color: white;
   border-radius: 10%;
-   /* background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");  */
+  /* background-image: url("https://images.unsplash.com/photo-1539979295193-ce3e38c97cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTI0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");  */
   overflow-x: hidden;
   transition: 1s;
   padding-top: 70px;
@@ -299,13 +296,10 @@ section .loader2 .dot {
   font-size: 40px;
 }
 
-
-
 nav {
   width: 80%;
   margin: 0 auto;
   padding: 0px 0;
-  
 }
 
 /* By Dominik Biedebach @domobch */
@@ -317,7 +311,7 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-nav.navtransition{
+nav.navtransition {
   display: flex;
   justify-content: center;
 }
@@ -465,19 +459,16 @@ nav.navtransition ul li a:hover:before {
     width: 240px;
   }
 }
-li{
+li {
   list-style-type: none;
 }
 .footer-container {
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
 }
 
-.circleLogo-footer{
+.circleLogo-footer {
   margin-top: 1%;
   height: 60px;
   width: 60px;
@@ -488,9 +479,8 @@ li{
   background: center/cover
     url(https://images.unsplash.com/photo-1486736065690-45e0655d038a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80);
   animation: spin 5s linear infinite;
-
 }
-.footer{
+.footer {
   bottom: 0;
   width: 100%;
   background-color: rgb(187, 187, 187);
@@ -498,13 +488,11 @@ li{
   justify-content: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
- 
 }
 
 .footer-heading {
   display: flex;
   flex-direction: column;
-  
 }
 .footer-heading h2 {
   padding-bottom: 5px;
@@ -531,7 +519,7 @@ li{
   display: flex;
   height: 10%;
 } */
-.textcontainer{
+.textcontainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -541,7 +529,7 @@ li{
   align-items: center;
 }
 
-.welcometext{
+.welcometext {
   font-family: "Courier New", Courier, monospace;
   font-size: 4em;
   color: white;
@@ -549,7 +537,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-.testing{
+.testing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,7 +548,7 @@ li{
   width: 150px;
   align-self: flex-start;
   justify-content: flex-start;
-  margin-left: -200px; 
+  margin-left: -200px;
   content: "";
   border-radius: 50%;
   background: center/cover
@@ -596,7 +584,6 @@ li{
   animation: glow 1.5s linear infinite;
 }
 
-
 @media screen and (min-width: 576px) {
   .sidenav {
     display: none;
@@ -610,12 +597,11 @@ li{
 }
 @media screen and (max-width: 576px) {
   section .loader {
-    margin-top: 50% ;
+    margin-top: 50%;
     margin-left: 15px;
   }
   section .loader2 {
     margin-left: 20px;
-    
   }
   section {
     width: 100%;
@@ -632,8 +618,8 @@ li{
   section .loader2 .RemoveDot2 {
     display: none;
   }
-  
-  #SlideshowBG{
+
+  #SlideshowBG {
     height: 84.4vh;
   }
 
@@ -661,14 +647,13 @@ li{
   }
   .footer-container {
     height: 100px;
-    
   }
-  
+
   .footer-heading a {
     font-size: 0.9em;
     border-top: none;
   }
- 
+
   .footer-heading h2 {
     margin-bottom: 0;
     padding-bottom: 10px;
@@ -681,25 +666,24 @@ li{
     display: flex;
     flex-direction: column;
     padding-left: 5%;
-    
   }
-  .textcontainer{
+  .textcontainer {
     height: 0px;
     width: 0px;
-    margin:0;  
+    margin: 0;
   }
-  .textcontainer .welcometext{
+  .textcontainer .welcometext {
     display: none;
   }
-  .textcontainer .circleLogo{
+  .textcontainer .circleLogo {
     display: none;
   }
-  nav.navtransition{
+  nav.navtransition {
     display: none;
   }
 }
 @media screen and (min-height: 1329px) {
-  #SlideshowBG{
+  #SlideshowBG {
     height: 92.2vh;
   }
 }
