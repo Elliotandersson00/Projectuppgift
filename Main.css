@@ -466,6 +466,12 @@ li {
   background-color: rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 0%;
+
+ /* display: flex;
+ justify-content: flex-end;
+ align-items: flex-end; */
+=======
+r
 }
 
 .circleLogo-footer {
@@ -679,6 +685,9 @@ li {
     display: none;
   }
   nav.navtransition {
+    display: none;
+  }
+  .circleLogo-footer{
     display: none;
   }
 }

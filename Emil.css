@@ -1,6 +1,11 @@
 body{
   font-weight: bold;
+  height: 100vh;
+  font: italic;
+
+
 }
+
 .container{
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.3);
@@ -44,8 +49,8 @@ justify-content: center;
 
 .breakingpoint-side
 {
-  margin-top: 2%;
-  height: 400px;
+  margin-top: 8%;
+  height: 200px;
   width: 15px;
   border-radius: 25px;
   background-color: rgba(73, 124, 97, 0.5);
@@ -62,6 +67,15 @@ h4{
     padding-bottom: 10%;
     padding-top: 10%;
     border-bottom: 2px outset black ;
+}
+
+.procent{
+  background-color: rgb(138, 228, 160);
+    width: 80%;
+    height: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
 }
 .inside li {
     display: flex;
@@ -199,11 +213,53 @@ ul{
   content: "";
   border-radius: 50%;
   background: center/cover
-    url(https://images.unsplash.com/photo-1486736065690-45e0655d038a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80);
+    url(https://scontent-arn2-1.xx.fbcdn.net/v/t1.18169-9/249457_10151241115411273_311578437_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=4cnLD7XTX_IAX_LeYk4&tn=Iy5HDYgRmDlU8-0T&_nc_ht=scontent-arn2-1.xx&oh=00_AT9F_Cc6E5FQSI9Z67STImQZ_PuaYRWXo-srstxxSiDQcQ&oe=62222118);
   animation: spin 5s linear infinite;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+/* body {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.waviy span {
+  border-bottom: 3px solid black;
+  font-family: italic;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+  
 @media screen and (max-width: 576px){
   .breakingpoint-side{
     display: none;
@@ -216,10 +272,24 @@ ul{
 }
 .container-box
 {
+  padding-top: 20px;
   display: flex;
   flex-direction:column ;
  align-items: center;
+
 }
+.container-2
+{
+  display: none;
+}
+.circleLogo-center
+{
+  margin-top: 55px;
+}
+.waviy span {
+  display: none;
+}
+
 
 }
 @-webkit-keyframes jello-horizontal {
