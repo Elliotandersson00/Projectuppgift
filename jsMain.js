@@ -2,13 +2,15 @@
  function openNav() {
    document.getElementById("buttonjs").style.width = "295px";
   document.getElementById("hamburger").style.visibility= "hidden";
-   
+  document.getElementById("A").style.visibility="hidden"
+  document.getElementById("I").style.visibility="hidden"
+  document.getElementById("K").style.visibility="hidden"
  }
 
  function closeNav() {
    document.getElementById("buttonjs").style.width = "0";
    document.getElementById("hamburger").style.visibility = "visible";
-  
+   
 }
 
 
