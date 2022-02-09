@@ -71,7 +71,7 @@
 
 .welcomeText .img2 {
   width: 40%;
-  height: 40%;
+  height: 35%;
   margin-left: 30%;
   margin-top: 10%;
   -webkit-animation: pText 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -139,7 +139,7 @@ input[type="radio"] {
 @media only screen and (max-width: 576px) {
   .container {
     height: 300px;
-    width: 340px;
+    width: 320px;
     padding: 4em;
     padding-right: 0;
     padding-top: 2em;
