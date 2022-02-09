@@ -1,5 +1,221 @@
 @media screen and (max-width: 576px) {
+  #elliotBild {
+    display: none;
+  }
+  .aboutMe {
+    display: none;
+  }
+  div.pratBubbla {
+    display: none;
+  }
+  .pratBubbla::before {
+    display: none;
+  }
+  #öhk {
+    display: none;
+  }
+  #puckId {
+    display: none;
+  }
+  #developId {
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
 @media screen and (min-width: 576px) {
+  .bouncy {
+    display: none;
+  }
+}
+
+.containerBild {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.bubblaContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pratBubbla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: #cfcfcf;
+  border-radius: 10px;
+  color: #fff;
+  letter-spacing: 5px;
+  animation: shaker 2s linear infinite;
+}
+.pratBubbla::before {
+  position: absolute;
+  top: 48px;
+  left: 50px;
+  content: "";
+  border-top: 12px solid #cfcfcf;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+#elliotBild {
+  height: 400px;
+  width: 200px;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+@keyframes shaker {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+#öhk {
+  width: 100px;
+  height: 100px;
+}
+
+#puckId {
+  width: 20px;
+  height: 20px;
+}
+
+.wrapper {
+  width: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  opacity: 0.9;
+}
+.container {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar {
+  position: relative;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+#htmlcss-bar {
+  animation: htmlcss-fill 2s forwards;
+}
+@keyframes htmlcss-fill {
+  100% {
+    width: 35%;
+  }
+}
+
+#csharp-bar {
+  animation: csharp-fill 2s forwards;
+}
+@keyframes csharp-fill {
+  100% {
+    width: 60%;
+  }
+}
+
+#sql-bar {
+  animation: sql-fill 2s forwards;
+}
+@keyframes sql-fill {
+  100% {
+    width: 45%;
+  }
+}
+
+#db-bar {
+  animation: db-fill 2s forwards;
+}
+@keyframes db-fill {
+  100% {
+    width: 55%;
+  }
+}
+
+.aboutMe {
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0.9;
+  margin-right: 80%;
+}
+
+.aboutMe p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.bouncy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 40px;
+}
+.bouncy span {
+  font-family: "Alfa Slab One", cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: bouncy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes bouncy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
 }
