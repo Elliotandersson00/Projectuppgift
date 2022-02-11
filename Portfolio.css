@@ -20,7 +20,6 @@
   -webkit-animation: text-flicker-in-glow 3s linear both;
   animation: text-flicker-in-glow 3s linear both;
 }
-
 @keyframes text-flicker-in-glow {
   10% {
     opacity: 0;
@@ -148,6 +147,9 @@ input[type="radio"] {
     bottom: 400px;
     left: -53px;
   }
+  p {
+    display: none;
+  }
   .slide-wrapper {
     width: 100%;
     padding: 0;
@@ -211,7 +213,7 @@ input[type="radio"] {
 }
 
 .slide-4 {
-  background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  background-image: url("https://t4.ftcdn.net/jpg/02/48/96/11/360_F_248961156_XeSISXFo6bcFUw830wpE2zPLxWGCl1u9.jpg");
 }
 
 /*===================
