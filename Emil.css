@@ -286,8 +286,11 @@ ul{
 {
   margin-top: 55px;
 }
-.waviy span {
+.waviy  {
   display: none;
+}
+.container {
+  height: 300px;
 }
 
 
